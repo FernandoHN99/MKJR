@@ -1,13 +1,9 @@
 :root {
-  /* Font Sizes */
-  --fs-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);    /* 12px - 14px */
-  --fs-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);      /* 14px - 16px */
-  --fs-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);      /* 16px - 18px */
-  --fs-md: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);     /* 18px - 20px */
-  --fs-lg: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);      /* 20px - 24px */
-  --fs-xl: clamp(1.5rem, 1.3rem + 1vw, 2rem);            /* 24px - 32px */
-  --fs-2xl: clamp(2rem, 1.8rem + 1.25vw, 2.5rem);        /* 32px - 40px */
-  --fs-3xl: clamp(2.5rem, 2.2rem + 1.5vw, 3rem);         /* 40px - 48px */
+  /* Simplified Font Sizes */
+  --fs-title: clamp(2.5rem, 2.2rem + 1.5vw, 3rem);      /* Large titles */
+  --fs-subtitle: clamp(1.5rem, 1.3rem + 1vw, 2rem);     /* Subtitles */
+  --fs-bigtext: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem); /* Bigger text */
+  --fs-smalltext: clamp(1rem, 0.9rem + 0.5vw, 1.125rem); /* Regular text */
   
   /* Font Weights */
   --fw-regular: 400;
