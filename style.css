@@ -18,14 +18,14 @@ body {
 }
 
 .secao img {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .titulos {
   text-align: center;
-  font-size: var(--fs-bigtext);
+  font-size: calc(var(--fs-bigtext) * 0.9);
   font-weight: var(--fw-bold);
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .secao,
@@ -38,8 +38,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
-  max-width: 1200px;
+  gap: 1.5rem;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -73,30 +73,30 @@ body {
 .botaocontato {
   background-color: #5ea8b8;
   color: #fff;
-  font-size: var(--fs-subtitle);
+  font-size: calc(var(--fs-subtitle) * 0.9);
   margin-top: 5%;
-  padding: 5%;
+  padding: 4%;
   font-weight: var(--fw-bold);
   border: 0;
   transition: transform 0.3s ease;
   font-family: var(--ff-primary);
   border-radius: 5px;
-  margin-right: 35px;
+  margin-right: 25px;
   cursor: pointer;
 }
 
 .botaosbmais {
   background-color: #e6e6e6;
   color: #3b3b3b;
-  font-size: var(--fs-bigtext);
+  font-size: calc(var(--fs-bigtext) * 0.9);
   margin-top: 5%;
-  padding: 5%;
+  padding: 4%;
   font-weight: var(--fw-bold);
   border: 2px solid #707070;
   transition: background-color 0.3s ease;
   font-family: var(--ff-primary);
   border-radius: 5px;
-  margin-right: 35px;
+  margin-right: 25px;
   cursor: pointer;
 }
 
@@ -112,8 +112,8 @@ body {
 
 .secao1-2 {
   flex: 1;
-  padding-top: 3%;
-  padding-right: 10%;
+  padding-top: 2%;
+  padding-right: 8%;
   color: #100d21;
   display: inline-block;
   width: 100%;
@@ -130,13 +130,13 @@ body {
 
 .secao1-2 h2 {
   margin-bottom: -5px;
-  font-size: var(--fs-title);
+  font-size: calc(var(--fs-title) * 0.9);
   line-height: 110%;
   text-align: left;
 }
 
 .secao1-2 h3 {
-  font-size: var(--fs-bigtext);
+  font-size: calc(var(--fs-bigtext) * 0.9);
   margin-bottom: -5px;
   font-weight: var(--fw-regular);
 }
@@ -149,12 +149,12 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 .cards img {
-  width: 120px;
+  width: 100px;
   float: left;
   margin-left: 2%;
   margin-top: -1%;
@@ -162,9 +162,9 @@ body {
 
 .cards div {
   border-radius: 15px;
-  height: 300px;
+  height: 250px;
   width: 100%;
-  padding: 3%;
+  padding: 2.5%;
   background-color: #fff;
   margin-right: 15px;
   color: #2e2e2e;
@@ -193,8 +193,8 @@ header {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: #fff;
-  padding: 25px 10%;
-  margin-top: 20px;
+  padding: 8px 6%;
+  margin-top: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -209,7 +209,7 @@ header {
 }
 
 .logo img {
-  max-width: 180px;
+  max-width: 120px;
   border-radius: 12px;
   transition: transform 0.3s ease;
   filter: brightness(1.02);
@@ -222,7 +222,7 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 35px;
+  gap: 15px;
 }
 
 nav ul li {
@@ -238,10 +238,10 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-family: var(--ff-primary);
-  font-size: var(--fs-bigtext);
+  font-size: calc(var(--fs-bigtext) * 0.8);
   font-weight: var(--fw-bold);
   transition: all 0.3s ease;
-  padding: 10px 20px;
+  padding: 6px 12px;
   border-radius: 20px;
   letter-spacing: 0.5px;
 }
@@ -255,9 +255,9 @@ nav ul li a:hover {
 .secao3 {
   display: flex;
   justify-content: center;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 8%;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 6%;
   align-items: center;
 }
 
@@ -271,11 +271,11 @@ nav ul li a:hover {
 }
 
 .secao3-1 h3 {
-  font-size: var(--fs-subtitle);
+  font-size: calc(var(--fs-subtitle) * 0.9);
 }
 
 .secao3-1 h2 {
-  font-size: var(--fs-subtitle);
+  font-size: calc(var(--fs-subtitle) * 0.9);
 }
 
 .secao3-1 p {
@@ -299,14 +299,14 @@ nav ul li a:hover {
 
 .linhavert {
   width: 2px;
-  height: 100px;
+  height: 80px;
   background-color: #000;
   opacity: 0.6;
 }
 
 .cont h2 {
   color: #24226d;
-  font-size: var(--fs-subtitle);
+  font-size: calc(var(--fs-subtitle) * 0.9);
   width: 80%;
   padding-left: -30px;
 }
@@ -331,7 +331,7 @@ nav ul li a:hover {
 }
 
 .secao4 h2 {
-  font-size: var(--fs-title);
+  font-size: calc(var(--fs-title) * 0.9);
   font-weight: var(--fw-semibold);
   margin-bottom: -10px;
   margin-top: -10px;
@@ -339,7 +339,7 @@ nav ul li a:hover {
 
 .secao4 h3,
 .secao4 p {
-  font-size: var(--fs-bigtext);
+  font-size: calc(var(--fs-bigtext) * 0.9);
   font-weight: var(--fw-semibold);
   margin-bottom: 20px;
 }
@@ -381,7 +381,7 @@ nav ul li a:hover {
 }
 
 .formobj{
-  max-width:60%;
+  max-width:50%;
 }
 .formobj input{
   width:46%;
@@ -391,16 +391,16 @@ nav ul li a:hover {
   margin-bottom:20px;
 
   color:#fff;
-  padding:15px;
+  padding:12px;
 }
 .formobj input::placeholder{
   color:#cacaca;
 }
 .formobj button{
     background-color: #2e2e2e4d;  
-    font-size:var(--fs-title);
+    font-size:calc(var(--fs-title) * 0.9);
     color: #ffffff9a;  
-  padding: 20px 10% 25px 10%;
+  padding: 15px 8% 20px 8%;
   border-radius: 15px;
   border: 2px solid;
   border-color: #2e2e2e;
@@ -447,8 +447,8 @@ nav ul li a:hover {
 }
 
 .colunas {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 8%;
+  padding-right: 8%;
   display: flex;
 }
 
@@ -465,13 +465,13 @@ nav ul li a:hover {
 }
 
 .secao{
-   margin-top: 5%;
+   margin: 4% 4%;
    flex-direction: row;
    margin-left: 5%;
    margin-right: 5%;
    margin-top: 5%;
 }
-/* 
+
 @media screen and (max-width: 768px){
   header, .secao, .secao2, .secao1-2, .cards, .secao3-1, .secao3{
     flex-direction:column;
@@ -519,4 +519,4 @@ nav ul li a:hover {
     padding-left:5%;
     padding-right:5%;
   }
-} */
+}
