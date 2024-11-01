@@ -1,10 +1,8 @@
-@import url('fonts.css');
-
 html {
   height: 100%;
   width: 100%;
-  color: #3b3b3b;
-  font-family: var(--ff-primary);
+  color: hwb(189 2% 63%);
+  font-family: 'Open Sans', sans-serif;
   text-align: justify;
   scroll-behavior: smooth;
   display: flex;
@@ -18,14 +16,15 @@ body {
 }
 
 .secao img {
-  max-width: 100%;
+  max-width: 80%;
+
 }
 
 .titulos {
   text-align: center;
-  font-size: calc(var(--fs-bigtext) * 0.9);
-  font-weight: var(--fw-bold);
-  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 80px;
 }
 
 .secao,
@@ -34,35 +33,13 @@ body {
   justify-content: center;
 }
 
-.secao-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
 .secao1-1 {
-  flex: 1;
+  margin: -10px;
   color: #100d21;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   width: 100%;
   height: 100%;
-}
-
-.secao1-1 img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(94, 168, 184, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.secao1-1 img:hover {
-  transform: scale(1.02);
+  text-align: left;
 }
 
 .botoes {
@@ -71,32 +48,32 @@ body {
 }
 
 .botaocontato {
-  background-color: #5ea8b8;
+  background-color: rgb(19, 103, 138);
   color: #fff;
-  font-size: calc(var(--fs-subtitle) * 0.9);
+  font-size: 30px;
   margin-top: 5%;
-  padding: 4%;
-  font-weight: var(--fw-bold);
+  padding: 5%;
+  font-weight: 800;
   border: 0;
   transition: transform 0.3s ease;
-  font-family: var(--ff-primary);
+  font-family: 'Open Sans', sans-serif;
   border-radius: 5px;
-  margin-right: 25px;
+  margin-right: 35px;
   cursor: pointer;
 }
 
 .botaosbmais {
   background-color: #e6e6e6;
   color: #3b3b3b;
-  font-size: calc(var(--fs-bigtext) * 0.9);
+  font-size: 25px;
   margin-top: 5%;
-  padding: 4%;
-  font-weight: var(--fw-bold);
+  padding: 5%;
+  font-weight: 800;
   border: 2px solid #707070;
   transition: background-color 0.3s ease;
-  font-family: var(--ff-primary);
+  font-family: 'Open Sans', sans-serif;
   border-radius: 5px;
-  margin-right: 25px;
+  margin-right: 35px;
   cursor: pointer;
 }
 
@@ -111,9 +88,8 @@ body {
 }
 
 .secao1-2 {
-  flex: 1;
-  padding-top: 2%;
-  padding-right: 8%;
+  padding-top: 3%;
+  padding-right: 10%;
   color: #100d21;
   display: inline-block;
   width: 100%;
@@ -124,21 +100,21 @@ body {
 
 .secao1-2 h1 {
   margin-bottom: -40px;
-  font-size: var(--fs-subtitle);
-  font-weight: var(--fw-regular);
+  font-size: 30px;
+  font-weight: 400;
 }
 
 .secao1-2 h2 {
   margin-bottom: -5px;
-  font-size: calc(var(--fs-title) * 0.9);
+  font-size: 60px;
   line-height: 110%;
-  text-align: left;
+  text-align:left;
 }
 
 .secao1-2 h3 {
-  font-size: calc(var(--fs-bigtext) * 0.9);
+  font-size: 25px;
   margin-bottom: -5px;
-  font-weight: var(--fw-regular);
+  font-weight: 400;
 }
 
 
@@ -149,12 +125,12 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .cards img {
-  width: 100px;
+  width: 120px;
   float: left;
   margin-left: 2%;
   margin-top: -1%;
@@ -162,10 +138,10 @@ body {
 
 .cards div {
   border-radius: 15px;
-  height: 250px;
+  height: 300px;
   width: 100%;
-  padding: 2.5%;
-  background-color: #fff;
+  padding: 3%;
+  background-color: rgba(27, 154, 158, 0.589);
   margin-right: 15px;
   color: #2e2e2e;
   text-align: left;
@@ -177,87 +153,72 @@ body {
 }
 
 
+
 .cards div:hover {
-  background-color: #195663;
+  background-color: #1e949c;
   transform: scale(1.01);
   color: #fff;
 }
 
 .cards p {
-  font-size: var(--fs-smalltext);
-  font-weight: var(--fw-medium);
+  font-size: 15px;
+  font-weight: 500;
 }
 
 header {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(25, 86, 99, 0.75) 100%);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: rgb(23, 131, 158);
   color: #fff;
-  padding: 8px 6%;
-  margin-top: 5px;
+  padding: 1.5rem 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 4px 15px rgba(94, 168, 184, 0.15);
-  border-radius: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-  flex: 1;
+  flex: 0;
 }
 
 .logo img {
-  max-width: 120px;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
-  filter: brightness(1.02);
+  max-width: 180px;
+  height: auto;
 }
 
-.logo img:hover {
-  transform: scale(1.05);
+nav {
+  margin-right: 2rem;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li:last-child {
-  margin-right: 0;
-  /* Remove a margem do último item */
+  gap: 1rem;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-family: var(--ff-primary);
-  font-size: calc(var(--fs-bigtext) * 0.8);
-  font-weight: var(--fw-bold);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
   transition: all 0.3s ease;
-  padding: 6px 12px;
-  border-radius: 20px;
-  letter-spacing: 0.5px;
+  position: relative;
 }
 
 nav ul li a:hover {
-  transform: scale(1.05);
-  background-color: rgba(255, 255, 255, 0.95);
-  color: #195663;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgb(23, 131, 158);
+  transform: translateY(-2px);
 }
 
 .secao3 {
   display: flex;
   justify-content: center;
-  margin-left: 12%;
-  margin-right: 12%;
-  margin-top: 6%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 8%;
   align-items: center;
 }
 
@@ -271,16 +232,16 @@ nav ul li a:hover {
 }
 
 .secao3-1 h3 {
-  font-size: calc(var(--fs-subtitle) * 0.9);
+  font-size: 15px;
 }
 
 .secao3-1 h2 {
-  font-size: calc(var(--fs-subtitle) * 0.9);
+  font-size: 25px;
 }
 
 .secao3-1 p {
-  font-size: var(--fs-smalltext);
-  font-weight: var(--fw-regular);
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .secao3-2 {
@@ -294,25 +255,24 @@ nav ul li a:hover {
   margin-bottom: -40px;
   margin-top: -40px;
   justify-items: center;
-
 }
 
 .linhavert {
   width: 2px;
-  height: 80px;
-  background-color: #000;
+  height: 100px;
+  background-color: #00f7ff;
   opacity: 0.6;
 }
 
 .cont h2 {
   color: #24226d;
-  font-size: calc(var(--fs-subtitle) * 0.9);
+  font-size: 50px;
   width: 80%;
   padding-left: -30px;
 }
 
 .cont p {
-  font-size: var(--fs-smalltext);
+  font-size: 15px;
   margin-left: 15px;
 }
 
@@ -331,16 +291,16 @@ nav ul li a:hover {
 }
 
 .secao4 h2 {
-  font-size: calc(var(--fs-title) * 0.9);
-  font-weight: var(--fw-semibold);
+  font-size: 35px;
+  font-weight: 600;
   margin-bottom: -10px;
   margin-top: -10px;
 }
 
 .secao4 h3,
 .secao4 p {
-  font-size: calc(var(--fs-bigtext) * 0.9);
-  font-weight: var(--fw-semibold);
+  font-size: 20px;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
@@ -372,56 +332,67 @@ nav ul li a:hover {
 }
 
 .form {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.formobj {
   display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-  width:100%;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.formobj input {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px;
+  background-color:#0000007c;
+  color:#fff;
+}
+
+.formobj input:nth-child(3) {
+  flex: 100%;
+  min-width: 100%;
+}
+
+.formobj button {
+  width: 100%;
   padding: 15px;
 }
 
-.formobj{
-  max-width:50%;
+.formobj input::placeholder {
+  color: #cacaca;
 }
-.formobj input{
-  width:46%;
-  position:relative;
-  background-color:#0000007c;
-  border:0px;
-  margin-bottom:20px;
 
-  color:#fff;
-  padding:12px;
-}
-.formobj input::placeholder{
-  color:#cacaca;
-}
-.formobj button{
-    background-color: #2e2e2e4d;  
-    font-size:calc(var(--fs-title) * 0.9);
-    color: #ffffff9a;  
-  padding: 15px 8% 20px 8%;
+.formobj button {
+  background-color: #2e2e2e4d;
+  font-size: 35px;
+  color: #ffffff9a;
+  padding: 20px 10% 25px 10%;
   border-radius: 15px;
   border: 2px solid;
   border-color: #2e2e2e;
-  cursor:pointer;
+  cursor: pointer;
   transition: transform .4s;
-} 
-.formobj button:hover{
+}
+
+.formobj button:hover {
   transform: scale(1.01);
 }
+
 .btform input {
   background-color: #fff;
   color: #60a9b9;
-  font-size: var(--fs-title);
+  font-size: 30px;
   margin-top: 5%;
   padding: 5%;
   padding-top: 2%;
   padding-bottom: 2%;
-  font-weight: var(--fw-bold);
+  font-weight: 800;
   border: 0;
   transition: transform 0.3s ease;
-  font-family: var(--ff-primary);
+  font-family: 'Open Sans', sans-serif;
   border-radius: 5px;
   margin-right: 35px;
 }
@@ -447,8 +418,8 @@ nav ul li a:hover {
 }
 
 .colunas {
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 10%;
+  padding-right: 10%;
   display: flex;
 }
 
@@ -460,16 +431,8 @@ nav ul li a:hover {
 }
 
 .icones {
-  font-size: var(--fs-subtitle);
+  font-size: 25px;
   color: #212121;
-}
-
-.secao{
-   margin: 4% 4%;
-   flex-direction: row;
-   margin-left: 5%;
-   margin-right: 5%;
-   margin-top: 5%;
 }
 
 @media screen and (max-width: 768px){
@@ -489,7 +452,7 @@ nav ul li a:hover {
     margin-top: 5%;
     margin-left:5%;
     margin-right:10px;
-    font-size:var(--fs-bigtext);
+    font-size:20px;
     padding-bottom: 10%;
   }
   .cards{
@@ -502,13 +465,13 @@ nav ul li a:hover {
     margin:0%;
   }
   .secao3-1 h3{
-    font-size:var(--fs-title);
+    font-size:30px;
   }
   .cards img{
     width:180px;
   }
   nav ul li a {
-    font-size:var(--fs-title);
+    font-size:30px;
   }
   .copy{
     padding:8%;;
@@ -519,4 +482,26 @@ nav ul li a:hover {
     padding-left:5%;
     padding-right:5%;
   }
+}
+
+/* Adicione estes estilos ao seu CSS */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 3px solid #2F38A6;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.form button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
 }
